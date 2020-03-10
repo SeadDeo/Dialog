@@ -1,0 +1,26 @@
+<dialogue>
+    <node numNode="0">
+        <npctext >Привет путник.</npctext>
+        <answers>
+            <answer tonode = "1"><text>Привет, есть ли у тебя работа для меня?</text></answer>
+            <answer tonode = "1"><text>Есть ли что на продажу?</text></answer>
+            <answer tonode = "2"><text>Я должен идти.</text><dialend>true</dialend></answer>
+        </answers>
+    </node>
+    <node numNode="1">
+        <npctext >Да конечно(описание квеста).</npctext>
+        <answers>
+            <answer tonode = "2"><text>Я согласен.</text><dialend>true</dialend></answer>
+            <answer tonode = "0"><text>Мне это не интересно.</text><dialend>true</dialend></answer>
+            <answer tonode = "0"><text>Мне это не интересно.</text><dialend>true</dialend></answer>
+        </answers>
+    </node>
+    <node numNode="2">
+        <npctext delay="1">Я не торговец.</npctext>
+        <answers>
+            <answer tonode = "0"><text>Может тогда у тебя есть работа для меня?</text></answer>
+            <answer tonode = "0"><text>Тогда я пойду.</text><dialend>true</dialend></answer>
+            <answer tonode = "0"><text>Тогда я пойду.</text><dialend>true</dialend></answer>
+        </answers>
+    </node>
+</dialogue>
